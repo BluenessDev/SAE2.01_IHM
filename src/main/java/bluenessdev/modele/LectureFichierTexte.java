@@ -1,8 +1,5 @@
 package bluenessdev.modele;
 
-import bluenessdev.modele.Quete;
-import bluenessdev.modele.Scenario;
-
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;

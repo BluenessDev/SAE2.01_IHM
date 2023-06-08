@@ -1,9 +1,5 @@
 package bluenessdev.modele;
 
-import bluenessdev.modele.Joueur;
-import bluenessdev.modele.Quete;
-import bluenessdev.modele.Scenario;
-
 import java.util.ArrayList;
 import java.util.Comparator;
 
@@ -139,6 +135,9 @@ public class Niveau2 {
         ArrayList<ArrayList<Quete>> cheminsMoinsTemps = new ArrayList<>(liste_chemins);
         for (ArrayList<Quete> listeQuetes : new ArrayList<>(cheminsMoinsTemps)) {
             int temps = calulerTempsChemin(listeQuetes);
+            if (estExhaustif(listeQuetes, scenario)) {
+                cheminsMoinsTemps.remove(listeQuetes);
+            }
             if (temps < tempsmin) {
                 tempsmin = temps;
             }
@@ -184,6 +183,9 @@ public class Niveau2 {
         ArrayList<ArrayList<Quete>> cheminsMoinsQuetes = new ArrayList<>(liste_chemins);
         for (ArrayList<Quete> listeQuetes : new ArrayList<>(cheminsMoinsQuetes)) {
             int nbQuetesActuel = calulerNombreQuetes(listeQuetes);
+            if (estExhaustif(listeQuetes, scenario)) {
+                cheminsMoinsQuetes.remove(listeQuetes);
+            }
             if (nbQuetesActuel < nbQuetes) {
                 nbQuetes = nbQuetesActuel;
             }
@@ -294,6 +296,9 @@ public class Niveau2 {
         intialisation();
         ArrayList<ArrayList<Quete>> cheminsMoinsQuetes = new ArrayList<>(liste_chemins);
         for (ArrayList<Quete> listeQuetes : new ArrayList<>(cheminsMoinsQuetes)) {
+            if (estExhaustif(listeQuetes, scenario)) {
+                cheminsMoinsQuetes.remove(listeQuetes);
+            }
             int nbQuetesActuel = calulerNombreQuetes(listeQuetes);
             if (nbQuetesActuel < nbQuetes) {
                 nbQuetes = nbQuetesActuel;
@@ -315,6 +320,9 @@ public class Niveau2 {
         intialisation();
         ArrayList<ArrayList<Quete>> cheminsMoinsPas = new ArrayList<>(liste_chemins);
         for (ArrayList<Quete> listeQuetes : new ArrayList<>(cheminsMoinsPas)) {
+            if (estExhaustif(listeQuetes, scenario)) {
+                cheminsMoinsPas.remove(listeQuetes);
+            }
             int nbPasAcutuel = calulerNombrePas(listeQuetes);
             if (nbPasAcutuel < nbPas) {
                 nbPas = nbPasAcutuel;
