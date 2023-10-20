@@ -19,7 +19,11 @@ Ce projet respecte le modèle MVC (Modèle Vue Controleur).
 
 ## Comment utiliser ?
 
-Pour lancer l'application, il faut compiler et executer le fichier java [VueApplication](src/main/java/bluenessdev/vue/VueApplication.java) dans le répertoire vue.
+Pour lancer l'application, il faut compiler et executer le fichier java [VueApplication](https://openjfx.io) dans le répertoire vue.
+
+## Mise en garde ?
+
+Cette application requiert [JavaFX](src/main/java/bluenessdev/vue/VueApplication.java) pour pouvoir s'executer sur votre machine.
 
 ## Crédits
 
