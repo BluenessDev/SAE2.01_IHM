@@ -1,6 +1,7 @@
 <div align="center">
   <h1>PROJET RPG</h1>
-  <a href="https://fr.wikipedia.org/wiki/Java_(langage)"><img src="https://cdn-icons-png.flaticon.com/512/1183/1183669.png"/></a>
+  <a href="https://fr.wikipedia.org/wiki/Java_(langage)"><img src="https://img.shields.io/badge/Java-red?style=for-the-badge&logo=visualstudiocode"/></a>
+  <a href="https://fr.wikipedia.org/wiki/Feuilles_de_style_en_cascade"><img src="https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white"/></a>
 </div>
 
 ## À propos
